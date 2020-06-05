@@ -11,11 +11,13 @@ class Smartphone extends Prodotto {
         $this->colore = $_colore;
     
     }
-    // public function print() {
-    //     parent::print();
+    // public function dettagli() {
+    //     return $this->print() . ' ' . $this->colore;
     // }
+    
     
 }
 $smartphone = new Smartphone('B5789', 'Smartphone', 'Apple', 'iPhone 11 Pro Max','64 GB', 'Grigio siderale');
+$smartphone2 = new Smartphone('B6000', 'Smartphone', 'Samsung', 'S20 Ultra','128 GB', 'Bianco');
 
 ?>

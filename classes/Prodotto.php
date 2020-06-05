@@ -14,8 +14,8 @@ class Prodotto {
     public function print() {
         return $this->tipo . ' ' . $this->marca . ' ' . $this->modello;
     }
+
 }
-$prodotto = new Prodotto('ciao','ciao','ciao','ciao')
 
 
 ?>

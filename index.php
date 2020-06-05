@@ -11,13 +11,12 @@ include_once __DIR__ . '/classes/Computer.php';
 </head>
 <body>
 <h1>Prodotti</h1>
-<?php 
-var_dump($prodotto);
-var_dump($smartphone);
-var_dump($computer);
-?>
 
 <p><?php echo "{$smartphone->print()} {$smartphone->memoria} {$smartphone->colore}" ?></p>
+<p><?php echo $smartphone2->print() . ' ' . $smartphone2->memoria . ' ' . $smartphone2->colore ?></p>
 <p><?php echo $computer->print() ?></p>
+<h4><?php // echo $smartphone->dettagli(); ?></h4>
+<h4><?php // echo $computer->dettagli(); ?></h4>
+
 </body>
 </html>

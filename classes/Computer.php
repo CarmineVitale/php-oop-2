@@ -10,6 +10,13 @@ class Computer extends Prodotto {
         $this->ram = $_ram;
         $this->display = $_display;
     }
+    public function print() {
+        $info = parent::print();
+        return $info . ' ' . $this->ram . ' ' . $this->display;
+    }
+    // public function dettagli() {
+    //     return $this->print() . ' ' . $this->ram;
+    // }
 }
 $computer = new Computer('16 GB', '27 pollici', 'B5789', 'Computer', 'Apple', 'iMac');
 
